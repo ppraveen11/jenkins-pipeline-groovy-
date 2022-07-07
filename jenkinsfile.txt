@@ -1,0 +1,25 @@
+pipeline {
+
+stages {
+               stage('SCM')  {   
+                                          steps  {  
+                                                       echo "git pull request step1"
+                                                         echo  "git pull code2 step2"
+                                            }
+                }
+
+                stage('Deploy') {  
+                                              steps  {  
+                                                          echo  "deploying mycode"
+
+                                                          }
+                } 
+              
+                stage('Test')  {
+                                          steps {
+                                                     echo "test my final code"
+                                                    }
+
+                }  
+           }                                   
+}
